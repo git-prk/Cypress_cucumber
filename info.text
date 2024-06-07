@@ -1,0 +1,27 @@
+npm init
+npm install cypress --save-dev
+npm install npx
+npx cypress open
+
+https://kailash-pathak.medium.com/cypress-13-integration-with-bdd-cucumber-pom-a367f534b363
+BDD:
+from above link start from Installing Cucumber
+Step 1:(do all steps)
+
+npm install --save-dev cypress-cucumber-preprocessor
+
+check for step no 4 give proper path
+
+add below in package.json
+
+ "dependencies": {
+    "npx": "^10.2.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/cucumber/Tests"  #####(step 4-include path )
+  }
+
+
+
+-------------------------------------------------
