@@ -22,6 +22,6 @@ add below in package.json
     "step_definitions": "cypress/e2e/cucumber/Tests"  #####(step 4-include path )
   }
 
-
+npx cypress run --env TAGS ="@Smoke" -- headed -- browse chrome
 
 -------------------------------------------------

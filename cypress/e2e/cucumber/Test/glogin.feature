@@ -1,0 +1,1 @@
+Feature: Google page validation
